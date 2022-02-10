@@ -14,8 +14,16 @@ local function TeleportAll()
     end
 end;
 
-local TestWindow = Library:CreateWindow("MGU 2.0");
-Library:SetWatermark('MGU : '.. plr.Name.. ' : Beta');
+local function SpawnTPFunc()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(26,4,34)
+end;
+
+
+local function BlazingVortexFunc()
+    plr.Character.HumanoidRootPart.CFrame = CFrame.new(143,91249,112)
+end;
+local TestWindow = Library:CreateWindow("MGU : gg/SyRVxBdNYa");
+Library:SetWatermark('MGU : '.. plr.Name.. ' : Release');
 Library:Notify('Loading UI...');
 
 local MainTab = TestWindow:AddTab('Main');
@@ -27,14 +35,19 @@ local Autoswing = MainTabBox1:AddTab('Autoswing');
 local Autosell = MainTabBox2:AddTab('Autosell');
 local UnlockAll = MainTabBox3:AddTab('Unlock all islands');
 
+
 Autoswing:AddToggle('Autoswing', { Text = 'Autoswing' });
 Autosell:AddToggle('Autosell', { Text = 'Autosell' });
 UnlockAll:AddButton('Unlock all islands', TeleportAll);
 
+local TeleportTab = TestWindow:AddTab('Teleports (beta)');
+local TeleportBox1 = TeleportTab:AddLeftTabbox('Spawn');
+local TeleportText2 = TeleportBox1:AddTab('Teleports');
+TeleportText2:AddButton('Spawn', SpawnTPFunc);
 
-
-
-
+local TeleportBox2 = TeleportTab:AddRightTabbox('Blazing Vortex Island');
+local TeleportText2 = TeleportBox2:AddTab('Blazing Vortex Island');
+TeleportText2:AddButton('Blazing Vortex Island',BlazingVortexFunc);
 local PlayerTabBox1 = PlayerTab:AddLeftTabbox('Speed');
 local PlayerTabBox2 = PlayerTab:AddRightTabbox('High Jump');
 local Speed = PlayerTabBox1:AddTab('Speed');
@@ -43,6 +56,9 @@ Speed:AddToggle('Speed', { Text = "Speed"})
 local HighJump = PlayerTabBox2:AddTab('High Jump');
 HighJump:AddToggle('HighJump', { Text = "HighJump"})
 
+
+
+local Teleport
 local SettingsTab = TestWindow:AddTab('Settings');
 
 local function UpdateTheme()
@@ -163,5 +179,7 @@ Toggles.HighJump:OnChanged(function()
         plr.Character.Humanoid.JumpPower = 50 
     end
 end)
+
+
 UpdateTheme()
 Library:Notify('Jarxay#0001 : youtube.com/c/jarxay');
