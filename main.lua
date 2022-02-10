@@ -14,7 +14,7 @@ local function TeleportAll()
     end
 end;
 
-local TestWindow = Library:CreateWindow('MGU 2.0);
+local TestWindow = Library:CreateWindow('MGU 2.0');
 Library:SetWatermark('MGU : '.. plr.Name.. ' : Beta');
 Library:Notify('Loading UI...');
 
