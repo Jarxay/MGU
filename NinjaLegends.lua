@@ -1,7 +1,7 @@
 --MGU Made by jarxay
 
 local DiscordInvite = "https://discord.gg/7XFnezqGc3"
-
+local Version = "Release: ".. 2.1
 Library = loadstring(game:HttpGet('https://lindseyhost.com/UI/LinoriaLib.lua'))();
 Library:Notify('e')
 local plr = game:GetService("Players").LocalPlayer
@@ -70,9 +70,8 @@ end;
 local function KickPLR()
     plr:Kick("Why'd you even click this lol")
 end;
-local TestWindow = Library:CreateWindow("MGU : "..DiscordInvite);
-Library:SetWatermark('MGU : '.. plr.Name.. ' : Release');
-Library:Notify('Loading UI...');
+local TestWindow = Library:CreateWindow('MGU | '.. plr.Name.. ' | '..Version);
+Library:SetWatermark('MGU | '.. plr.Name.. ' | '..Version);
 
 local MainTab = TestWindow:AddTab('Main');
 local PlayerTab = TestWindow:AddTab('Player');
