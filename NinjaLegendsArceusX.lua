@@ -4,16 +4,17 @@
 -- Instances:
 
 local MguLite = Instance.new("ScreenGui")
+local Closed = Instance.new("TextButton")
 local MainFrame = Instance.new("Frame")
 local Main = Instance.new("Frame")
 local ButtonsOWO = Instance.new("Frame")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local UnlockIslands = Instance.new("TextButton")
-local UnlockElements = Instance.new("TextButton")
-local ManualSell = Instance.new("TextButton")
+local CollectHoops = Instance.new("TextButton")
 local Discord = Instance.new("TextButton")
 local Autofarm = Instance.new("TextButton")
+local UnlockElements = Instance.new("TextButton")
 local Mainowo = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
 local TextLabel_2 = Instance.new("TextLabel")
@@ -29,11 +30,11 @@ local AutobuySwordToggle = Instance.new("Frame")
 local AutobuySkillsToggle = Instance.new("Frame")
 local AutobuyBeltsToggle = Instance.new("Frame")
 local AutoRebirthToggle = Instance.new("Frame")
+local AutoRebirth_2 = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local WaterMark = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextButton_2 = Instance.new("TextButton")
-local Closed = Instance.new("TextButton")
 local PlayerFrame = Instance.new("Frame")
 local Main_2 = Instance.new("Frame")
 local Mainowo_2 = Instance.new("Frame")
@@ -55,6 +56,20 @@ MguLite.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 MguLite.Enabled = false
 MguLite.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MguLite.ResetOnSpawn = false
+
+Closed.Name = "Closed"
+Closed.Parent = MguLite
+Closed.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Closed.BorderColor3 = Color3.fromRGB(38, 83, 238)
+Closed.Position = UDim2.new(0.876077533, 0, 0.71828413, 0)
+Closed.Size = UDim2.new(0, 143, 0, 33)
+Closed.Visible = false
+Closed.Font = Enum.Font.SourceSans
+Closed.Text = "Open"
+Closed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Closed.TextScaled = true
+Closed.TextSize = 14.000
+Closed.TextWrapped = true
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = MguLite
@@ -107,40 +122,26 @@ UnlockIslands.TextScaled = true
 UnlockIslands.TextSize = 14.000
 UnlockIslands.TextWrapped = true
 
-UnlockElements.Name = "UnlockElements"
-UnlockElements.Parent = Frame
-UnlockElements.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-UnlockElements.BorderColor3 = Color3.fromRGB(52, 52, 52)
-UnlockElements.BorderSizePixel = 2
-UnlockElements.Position = UDim2.new(0.0293938592, 0, 0.295270324, 0)
-UnlockElements.Size = UDim2.new(0, 154, 0, 15)
-UnlockElements.Font = Enum.Font.Code
-UnlockElements.Text = "Unlock all elements"
-UnlockElements.TextColor3 = Color3.fromRGB(255, 255, 255)
-UnlockElements.TextScaled = true
-UnlockElements.TextSize = 14.000
-UnlockElements.TextWrapped = true
-
-ManualSell.Name = "ManualSell"
-ManualSell.Parent = Frame
-ManualSell.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ManualSell.BorderColor3 = Color3.fromRGB(52, 52, 52)
-ManualSell.BorderSizePixel = 2
-ManualSell.Position = UDim2.new(0.0293938592, 0, 0.598300695, 0)
-ManualSell.Size = UDim2.new(0, 154, 0, 15)
-ManualSell.Font = Enum.Font.Code
-ManualSell.Text = "COMING SOON"
-ManualSell.TextColor3 = Color3.fromRGB(255, 255, 255)
-ManualSell.TextScaled = true
-ManualSell.TextSize = 14.000
-ManualSell.TextWrapped = true
+CollectHoops.Name = "CollectHoops"
+CollectHoops.Parent = Frame
+CollectHoops.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+CollectHoops.BorderColor3 = Color3.fromRGB(52, 52, 52)
+CollectHoops.BorderSizePixel = 2
+CollectHoops.Position = UDim2.new(0.0293938592, 0, 0.598300695, 0)
+CollectHoops.Size = UDim2.new(0, 154, 0, 15)
+CollectHoops.Font = Enum.Font.Code
+CollectHoops.Text = "Collect all hoops"
+CollectHoops.TextColor3 = Color3.fromRGB(255, 255, 255)
+CollectHoops.TextScaled = true
+CollectHoops.TextSize = 14.000
+CollectHoops.TextWrapped = true
 
 Discord.Name = "Discord"
 Discord.Parent = Frame
 Discord.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 Discord.BorderColor3 = Color3.fromRGB(52, 52, 52)
 Discord.BorderSizePixel = 2
-Discord.Position = UDim2.new(0.023258891, 0, 0.798300624, 0)
+Discord.Position = UDim2.new(0.023258891, 0, 0.774058223, 0)
 Discord.Size = UDim2.new(0, 154, 0, 15)
 Discord.Font = Enum.Font.Code
 Discord.Text = "COMING SOON"
@@ -162,6 +163,20 @@ Autofarm.TextColor3 = Color3.fromRGB(255, 255, 255)
 Autofarm.TextScaled = true
 Autofarm.TextSize = 14.000
 Autofarm.TextWrapped = true
+
+UnlockElements.Name = "UnlockElements"
+UnlockElements.Parent = Frame
+UnlockElements.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+UnlockElements.BorderColor3 = Color3.fromRGB(52, 52, 52)
+UnlockElements.BorderSizePixel = 2
+UnlockElements.Position = UDim2.new(0.0293938592, 0, 0.295270324, 0)
+UnlockElements.Size = UDim2.new(0, 154, 0, 15)
+UnlockElements.Font = Enum.Font.Code
+UnlockElements.Text = "Unlock all elements"
+UnlockElements.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnlockElements.TextScaled = true
+UnlockElements.TextSize = 14.000
+UnlockElements.TextWrapped = true
 
 Mainowo.Name = "Mainowo"
 Mainowo.Parent = Main
@@ -313,6 +328,20 @@ AutoRebirthToggle.BorderColor3 = Color3.fromRGB(45, 45, 45)
 AutoRebirthToggle.Position = UDim2.new(0.0559329167, 0, 0.771718025, 0)
 AutoRebirthToggle.Size = UDim2.new(0, 13, 0, 15)
 
+AutoRebirth_2.Name = "AutoRebirth"
+AutoRebirth_2.Parent = Frame_2
+AutoRebirth_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+AutoRebirth_2.BorderColor3 = Color3.fromRGB(38, 83, 238)
+AutoRebirth_2.BorderSizePixel = 0
+AutoRebirth_2.Position = UDim2.new(0.152472556, 0, 0.772027791, 0)
+AutoRebirth_2.Size = UDim2.new(0, 124, 0, 15)
+AutoRebirth_2.Font = Enum.Font.Code
+AutoRebirth_2.Text = "Auto Rebirth"
+AutoRebirth_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoRebirth_2.TextScaled = true
+AutoRebirth_2.TextSize = 14.000
+AutoRebirth_2.TextWrapped = true
+
 TextButton.Parent = Main
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
@@ -355,20 +384,6 @@ TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
 TextButton_2.TextWrapped = true
-
-Closed.Name = "Closed"
-Closed.Parent = MguLite
-Closed.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-Closed.BorderColor3 = Color3.fromRGB(38, 83, 238)
-Closed.Position = UDim2.new(0.876077533, 0, 0.71828413, 0)
-Closed.Size = UDim2.new(0, 143, 0, 33)
-Closed.Visible = false
-Closed.Font = Enum.Font.SourceSans
-Closed.Text = "Open"
-Closed.TextColor3 = Color3.fromRGB(255, 255, 255)
-Closed.TextScaled = true
-Closed.TextSize = 14.000
-Closed.TextWrapped = true
 
 PlayerFrame.Name = "PlayerFrame"
 PlayerFrame.Parent = MguLite
@@ -495,7 +510,17 @@ TextButton_4.TextWrapped = true
 
 -- Scripts:
 
-local function AKMC_fake_script() -- MainFrame.JARAXY 
+local function HXZELLE_fake_script() -- Closed.LocalScript 
+	local script = Instance.new('LocalScript', Closed)
+
+	local Menu = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
+	script.Parent.MouseButton1Up:Connect(function()
+		Menu.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(HXZELLE_fake_script)()
+local function NUIXWM_fake_script() -- MainFrame.JARAXY 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local plr = game.Players.LocalPlayer
@@ -1241,8 +1266,8 @@ local function AKMC_fake_script() -- MainFrame.JARAXY
 		end
 	end)
 end
-coroutine.wrap(AKMC_fake_script)()
-local function RNZXSBU_fake_script() -- ButtonsOWO.LocalScript 
+coroutine.wrap(NUIXWM_fake_script)()
+local function KUMH_fake_script() -- ButtonsOWO.LocalScript 
 	local script = Instance.new('LocalScript', ButtonsOWO)
 
 	local plr = game.Players.LocalPlayer
@@ -1253,6 +1278,7 @@ local function RNZXSBU_fake_script() -- ButtonsOWO.LocalScript
 	
 	local Autofarm = MainFrame.Autofarm
 	
+	local Collectallhoops= MainFrame.CollectHoops
 	UnlockAllIslands.MouseButton1Up:Connect(function()
 		for i,v in pairs(game:GetService("Workspace").islandUnlockParts:GetChildren()) do
 			plr.Character.HumanoidRootPart.CFrame = v.CFrame
@@ -1332,12 +1358,20 @@ local function RNZXSBU_fake_script() -- ButtonsOWO.LocalScript
 	end)
 	
 	
-	Autofarm.MouseButton1Up:Connect(function()
+	Collectallhoops.MouseButton1Up:Connect(function()
+		local SavedPos = plr.Character.HumanoidRootPart.CFrame
+		
+		for i,v in pairs(game:GetService("Workspace").Hoops:GetChildren()) do
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+			wait(0.1)
+		end
+		wait(0.2)
+		plr.Character.HumanoidRootPart.CFrame = SavedPos
 		
 	end)
 end
-coroutine.wrap(RNZXSBU_fake_script)()
-local function ANLKVSO_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(KUMH_fake_script)()
+local function SRADJDR_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local main = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
@@ -1349,8 +1383,8 @@ local function ANLKVSO_fake_script() -- TextButton.LocalScript
 		player.Visible = true
 	end)
 end
-coroutine.wrap(ANLKVSO_fake_script)()
-local function YFVAIZH_fake_script() -- TextLabel_3.LocalScript 
+coroutine.wrap(SRADJDR_fake_script)()
+local function JGPYDJZ_fake_script() -- TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local plr = game.Players.LocalPlayer
@@ -1358,8 +1392,8 @@ local function YFVAIZH_fake_script() -- TextLabel_3.LocalScript
 	
 	script.Parent.Text = "MGU Lite | ".. plr.Name.. " | Release 1.0"
 end
-coroutine.wrap(YFVAIZH_fake_script)()
-local function IRBV_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(JGPYDJZ_fake_script)()
+local function BRJBQ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Menu = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
@@ -1368,18 +1402,8 @@ local function IRBV_fake_script() -- TextButton_2.LocalScript
 		script.Parent.Parent.Parent.Closed.Visible = true
 	end)
 end
-coroutine.wrap(IRBV_fake_script)()
-local function DRNE_fake_script() -- Closed.LocalScript 
-	local script = Instance.new('LocalScript', Closed)
-
-	local Menu = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
-	script.Parent.MouseButton1Up:Connect(function()
-		Menu.Visible = true
-		script.Parent.Visible = false
-	end)
-end
-coroutine.wrap(DRNE_fake_script)()
-local function CJRK_fake_script() -- PlayerFrame.JARAXY 
+coroutine.wrap(BRJBQ_fake_script)()
+local function RWDXLH_fake_script() -- PlayerFrame.JARAXY 
 	local script = Instance.new('LocalScript', PlayerFrame)
 
 	local main = script.Parent
@@ -1420,8 +1444,8 @@ local function CJRK_fake_script() -- PlayerFrame.JARAXY
 		end
 	end)
 end
-coroutine.wrap(CJRK_fake_script)()
-local function UIYNX_fake_script() -- TextLabel_5.LocalScript 
+coroutine.wrap(RWDXLH_fake_script)()
+local function QZFFA_fake_script() -- TextLabel_5.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local plr = game.Players.LocalPlayer
@@ -1429,8 +1453,8 @@ local function UIYNX_fake_script() -- TextLabel_5.LocalScript
 	
 	script.Parent.Text = "MGU Arceus X | ".. plr.Name.. " | Release 1.0"
 end
-coroutine.wrap(UIYNX_fake_script)()
-local function BKPUECE_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(QZFFA_fake_script)()
+local function QQGW_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local Menu = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
@@ -1439,8 +1463,8 @@ local function BKPUECE_fake_script() -- TextButton_3.LocalScript
 		script.Parent.Parent.Parent.Closed.Visible = true
 	end)
 end
-coroutine.wrap(BKPUECE_fake_script)()
-local function UVGZ_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(QQGW_fake_script)()
+local function HDOCZY_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local main = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
@@ -1452,4 +1476,4 @@ local function UVGZ_fake_script() -- TextButton_4.LocalScript
 		main.Visible = true
 	end)
 end
-coroutine.wrap(UVGZ_fake_script)()
+coroutine.wrap(HDOCZY_fake_script)()
