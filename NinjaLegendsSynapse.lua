@@ -1,7 +1,12 @@
+--[[for i,v in pairs(game:GetService("Workspace").Hoops:GetChildren()) do
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+   wait(0.1)
+end]]
+
 --MGU Made by jarxay
 
 local DiscordInvite = "https://discord.gg/7XFnezqGc3"
-local Version = "Release: ".. 2.2
+local Version = "Release: ".. 2.3
 Library = loadstring(game:HttpGet('https://lindseyhost.com/UI/LinoriaLib.lua'))();
 Library:Notify('e')
 local plr = game:GetService("Players").LocalPlayer
@@ -132,6 +137,13 @@ local function ManualSell()
 end;
 
 
+local function CollectHoops()
+    for i,v in pairs(game:GetService("Workspace").Hoops:GetChildren()) do
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+        wait(0.1)
+     end
+end;
+
 local function DebugFunc()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Jarxay/SimpleSpy/main/main.lua"))()
 end;
@@ -185,6 +197,7 @@ SellTabber:AddToggle('AutoRebirth', {Text = 'Auto Rebirth'});
 UnlockAll:AddButton('Unlock all islands', TeleportAll);
 UnlockAll:AddButton('Unlock all elements', UnlockAllEments);
 UnlockAll:AddButton('Autofarm', AutofarmFunc);
+UnlockAll:AddButton('Collect all hoops', CollectHoops)
 local TeleportBox1 = TeleportTab:AddLeftTabbox('Spawn');
 local TeleportText2 = TeleportBox1:AddTab('Spawn');
 TeleportText2:AddButton('Spawn', SpawnTPFunc);
@@ -1017,6 +1030,5 @@ end)
 Library:Notify('LOADED OMG NIGGERS')
 UpdateTheme()
 Library:Notify('Made by Jarxay#0001 | '.. DiscordInvite);
-
 
 
