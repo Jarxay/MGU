@@ -14,6 +14,7 @@ local UnlockElements = Instance.new("TextButton")
 local ManualSell = Instance.new("TextButton")
 local Discord = Instance.new("TextButton")
 local Autofarm = Instance.new("TextButton")
+local CollectHoops = Instance.new("TextButton")
 local Mainowo = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
 local TextLabel_2 = Instance.new("TextLabel")
@@ -158,6 +159,20 @@ Autofarm.TextColor3 = Color3.fromRGB(255, 255, 255)
 Autofarm.TextScaled = true
 Autofarm.TextSize = 14.000
 Autofarm.TextWrapped = true
+
+CollectHoops.Name = "CollectHoops"
+CollectHoops.Parent = Frame
+CollectHoops.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+CollectHoops.BorderColor3 = Color3.fromRGB(52, 52, 52)
+CollectHoops.BorderSizePixel = 2
+CollectHoops.Position = UDim2.new(0.0293938592, 0, 0.598300695, 0)
+CollectHoops.Size = UDim2.new(0, 154, 0, 15)
+CollectHoops.Font = Enum.Font.Code
+CollectHoops.Text = "Collect all hoops"
+CollectHoops.TextColor3 = Color3.fromRGB(255, 255, 255)
+CollectHoops.TextScaled = true
+CollectHoops.TextSize = 14.000
+CollectHoops.TextWrapped = true
 
 Mainowo.Name = "Mainowo"
 Mainowo.Parent = Main
@@ -453,7 +468,7 @@ TextButton_2.TextWrapped = true
 
 -- Scripts:
 
-local function HYHJHK_fake_script() -- MainFrame.JARAXY 
+local function HCOW_fake_script() -- MainFrame.JARAXY 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local plr = game.Players.LocalPlayer
@@ -1206,8 +1221,8 @@ local function HYHJHK_fake_script() -- MainFrame.JARAXY
 		end
 	end)
 end
-coroutine.wrap(HYHJHK_fake_script)()
-local function WEFPRVZ_fake_script() -- ButtonsOWO.LocalScript 
+coroutine.wrap(HCOW_fake_script)()
+local function NVZOKIW_fake_script() -- ButtonsOWO.LocalScript 
 	local script = Instance.new('LocalScript', ButtonsOWO)
 
 	local plr = game.Players.LocalPlayer
@@ -1217,6 +1232,8 @@ local function WEFPRVZ_fake_script() -- ButtonsOWO.LocalScript
 	local UnlockAllElements = MainFrame.UnlockElements
 	
 	local Autofarm = MainFrame.Autofarm
+	
+	local Collectallhoops = MainFrame.CollectHoops
 	
 	UnlockAllIslands.MouseButton1Up:Connect(function()
 		for i,v in pairs(game:GetService("Workspace").islandUnlockParts:GetChildren()) do
@@ -1300,9 +1317,21 @@ local function WEFPRVZ_fake_script() -- ButtonsOWO.LocalScript
 	Autofarm.MouseButton1Up:Connect(function()
 		
 	end)
+	
+	Collectallhoops.MouseButton1Up:Connect(function()
+		local SavedPos = plr.Character.HumanoidRootPart.CFrame
+	
+		for i,v in pairs(game:GetService("Workspace").Hoops:GetChildren()) do
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+			wait(0.1)
+		end
+		wait(0.2)
+		plr.Character.HumanoidRootPart.CFrame = SavedPos
+	
+	end)
 end
-coroutine.wrap(WEFPRVZ_fake_script)()
-local function LCCTL_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(NVZOKIW_fake_script)()
+local function UNYBQUA_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local main = game.Players.LocalPlayer.PlayerGui.MguLiteOther.MainFrame
@@ -1314,8 +1343,8 @@ local function LCCTL_fake_script() -- TextButton.LocalScript
 		player.Visible = true
 	end)
 end
-coroutine.wrap(LCCTL_fake_script)()
-local function AEQLK_fake_script() -- TextLabel_3.LocalScript 
+coroutine.wrap(UNYBQUA_fake_script)()
+local function YZWOJPF_fake_script() -- TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local plr = game.Players.LocalPlayer
@@ -1323,8 +1352,8 @@ local function AEQLK_fake_script() -- TextLabel_3.LocalScript
 	
 	script.Parent.Text = "MGU Lite | ".. plr.Name.. " | Release 1.0"
 end
-coroutine.wrap(AEQLK_fake_script)()
-local function GDTPGI_fake_script() -- PlayerFrame.JARAXY 
+coroutine.wrap(YZWOJPF_fake_script)()
+local function TMPH_fake_script() -- PlayerFrame.JARAXY 
 	local script = Instance.new('LocalScript', PlayerFrame)
 
 	local main = game.Players.LocalPlayer.PlayerGui.MguLiteOther.PlayerFrame.Main.Mainowo
@@ -1365,8 +1394,8 @@ local function GDTPGI_fake_script() -- PlayerFrame.JARAXY
 		end
 	end)
 end
-coroutine.wrap(GDTPGI_fake_script)()
-local function PZYD_fake_script() -- TextLabel_5.LocalScript 
+coroutine.wrap(TMPH_fake_script)()
+local function XLPAY_fake_script() -- TextLabel_5.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local plr = game.Players.LocalPlayer
@@ -1374,8 +1403,8 @@ local function PZYD_fake_script() -- TextLabel_5.LocalScript
 	
 	script.Parent.Text = "MGU Arceus X | ".. plr.Name.. " | Release 1.0"
 end
-coroutine.wrap(PZYD_fake_script)()
-local function FGBVS_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(XLPAY_fake_script)()
+local function FKIMRM_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local main = game.Players.LocalPlayer.PlayerGui.MguLiteOther.MainFrame
@@ -1387,4 +1416,4 @@ local function FGBVS_fake_script() -- TextButton_2.LocalScript
 		main.Visible = true
 	end)
 end
-coroutine.wrap(FGBVS_fake_script)()
+coroutine.wrap(FKIMRM_fake_script)()
