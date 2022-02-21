@@ -468,7 +468,7 @@ TextButton_2.TextWrapped = true
 
 -- Scripts:
 
-local function HCOW_fake_script() -- MainFrame.JARAXY 
+local function EGGFBBL_fake_script() -- MainFrame.JARAXY 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local plr = game.Players.LocalPlayer
@@ -1221,8 +1221,8 @@ local function HCOW_fake_script() -- MainFrame.JARAXY
 		end
 	end)
 end
-coroutine.wrap(HCOW_fake_script)()
-local function NVZOKIW_fake_script() -- ButtonsOWO.LocalScript 
+coroutine.wrap(EGGFBBL_fake_script)()
+local function FXAHPOY_fake_script() -- ButtonsOWO.LocalScript 
 	local script = Instance.new('LocalScript', ButtonsOWO)
 
 	local plr = game.Players.LocalPlayer
@@ -1330,8 +1330,8 @@ local function NVZOKIW_fake_script() -- ButtonsOWO.LocalScript
 	
 	end)
 end
-coroutine.wrap(NVZOKIW_fake_script)()
-local function UNYBQUA_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(FXAHPOY_fake_script)()
+local function JDGTGWF_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local main = game.Players.LocalPlayer.PlayerGui.MguLiteOther.MainFrame
@@ -1343,8 +1343,8 @@ local function UNYBQUA_fake_script() -- TextButton.LocalScript
 		player.Visible = true
 	end)
 end
-coroutine.wrap(UNYBQUA_fake_script)()
-local function YZWOJPF_fake_script() -- TextLabel_3.LocalScript 
+coroutine.wrap(JDGTGWF_fake_script)()
+local function KRDK_fake_script() -- TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local plr = game.Players.LocalPlayer
@@ -1352,8 +1352,8 @@ local function YZWOJPF_fake_script() -- TextLabel_3.LocalScript
 	
 	script.Parent.Text = "MGU Lite | ".. plr.Name.. " | Release 1.0"
 end
-coroutine.wrap(YZWOJPF_fake_script)()
-local function TMPH_fake_script() -- PlayerFrame.JARAXY 
+coroutine.wrap(KRDK_fake_script)()
+local function NTGRT_fake_script() -- PlayerFrame.JARAXY 
 	local script = Instance.new('LocalScript', PlayerFrame)
 
 	local main = game.Players.LocalPlayer.PlayerGui.MguLiteOther.PlayerFrame.Main.Mainowo
@@ -1394,17 +1394,17 @@ local function TMPH_fake_script() -- PlayerFrame.JARAXY
 		end
 	end)
 end
-coroutine.wrap(TMPH_fake_script)()
-local function XLPAY_fake_script() -- TextLabel_5.LocalScript 
+coroutine.wrap(NTGRT_fake_script)()
+local function XNNJB_fake_script() -- TextLabel_5.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local plr = game.Players.LocalPlayer
 	
 	
-	script.Parent.Text = "MGU Arceus X | ".. plr.Name.. " | Release 1.0"
+	script.Parent.Text = "MGU Arceus X | ".. plr.Name.. " | Release 2.3"
 end
-coroutine.wrap(XLPAY_fake_script)()
-local function FKIMRM_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(XNNJB_fake_script)()
+local function TSEAAZZ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local main = game.Players.LocalPlayer.PlayerGui.MguLiteOther.MainFrame
@@ -1416,4 +1416,4 @@ local function FKIMRM_fake_script() -- TextButton_2.LocalScript
 		main.Visible = true
 	end)
 end
-coroutine.wrap(FKIMRM_fake_script)()
+coroutine.wrap(TSEAAZZ_fake_script)()
