@@ -138,10 +138,14 @@ end;
 
 
 local function CollectHoops()
-    for i,v in pairs(game:GetService("Workspace").Hoops:GetChildren()) do
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-        wait(0.1)
-     end
+	local SavedPos = plr.Character.HumanoidRootPart.CFrame
+	
+	for i,v in pairs(game:GetService("Workspace").Hoops:GetChildren()) do
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+		wait(0.1)
+	end
+	wait(0.2)
+	plr.Character.HumanoidRootPart.CFrame = SavedPos
 end;
 
 local function DebugFunc()
