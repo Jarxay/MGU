@@ -1451,7 +1451,7 @@ local function QZFFA_fake_script() -- TextLabel_5.LocalScript
 	local plr = game.Players.LocalPlayer
 	
 	
-	script.Parent.Text = "MGU Arceus X | ".. plr.Name.. " | Release 1.0"
+	script.Parent.Text = "MGU Arceus X | ".. plr.Name.. " | Release 2.3"
 end
 coroutine.wrap(QZFFA_fake_script)()
 local function QQGW_fake_script() -- TextButton_3.LocalScript 
