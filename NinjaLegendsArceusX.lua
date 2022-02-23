@@ -53,7 +53,6 @@ local TextButton_4 = Instance.new("TextButton")
 
 MguLite.Name = "MguLite"
 MguLite.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-MguLite.Enabled = false
 MguLite.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MguLite.ResetOnSpawn = false
 
@@ -367,7 +366,7 @@ TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.Position = UDim2.new(0.0167299844, 0, -0.00579654798, 0)
 TextLabel_3.Size = UDim2.new(0, 235, 0, 18)
 TextLabel_3.Font = Enum.Font.Code
-TextLabel_3.Text = "MGU Arceus X | INSERTPLR  | Release 2.3"
+TextLabel_3.Text = "MGU Arceus X | INSERTPLR  | Release 1.0"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
@@ -510,7 +509,7 @@ TextButton_4.TextWrapped = true
 
 -- Scripts:
 
-local function HXZELLE_fake_script() -- Closed.LocalScript 
+local function TBUO_fake_script() -- Closed.LocalScript 
 	local script = Instance.new('LocalScript', Closed)
 
 	local Menu = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
@@ -519,8 +518,8 @@ local function HXZELLE_fake_script() -- Closed.LocalScript
 		script.Parent.Visible = false
 	end)
 end
-coroutine.wrap(HXZELLE_fake_script)()
-local function NUIXWM_fake_script() -- MainFrame.JARAXY 
+coroutine.wrap(TBUO_fake_script)()
+local function WWAGYA_fake_script() -- MainFrame.JARAXY 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local plr = game.Players.LocalPlayer
@@ -1266,8 +1265,8 @@ local function NUIXWM_fake_script() -- MainFrame.JARAXY
 		end
 	end)
 end
-coroutine.wrap(NUIXWM_fake_script)()
-local function KUMH_fake_script() -- ButtonsOWO.LocalScript 
+coroutine.wrap(WWAGYA_fake_script)()
+local function DSQD_fake_script() -- ButtonsOWO.LocalScript 
 	local script = Instance.new('LocalScript', ButtonsOWO)
 
 	local plr = game.Players.LocalPlayer
@@ -1370,8 +1369,8 @@ local function KUMH_fake_script() -- ButtonsOWO.LocalScript
 		
 	end)
 end
-coroutine.wrap(KUMH_fake_script)()
-local function SRADJDR_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(DSQD_fake_script)()
+local function EYZXIO_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local main = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
@@ -1383,8 +1382,8 @@ local function SRADJDR_fake_script() -- TextButton.LocalScript
 		player.Visible = true
 	end)
 end
-coroutine.wrap(SRADJDR_fake_script)()
-local function JGPYDJZ_fake_script() -- TextLabel_3.LocalScript 
+coroutine.wrap(EYZXIO_fake_script)()
+local function QRNKGIR_fake_script() -- TextLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_3)
 
 	local plr = game.Players.LocalPlayer
@@ -1392,8 +1391,8 @@ local function JGPYDJZ_fake_script() -- TextLabel_3.LocalScript
 	
 	script.Parent.Text = "MGU Lite | ".. plr.Name.. " | Release 1.0"
 end
-coroutine.wrap(JGPYDJZ_fake_script)()
-local function BRJBQ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(QRNKGIR_fake_script)()
+local function KVOD_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Menu = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
@@ -1402,8 +1401,8 @@ local function BRJBQ_fake_script() -- TextButton_2.LocalScript
 		script.Parent.Parent.Parent.Closed.Visible = true
 	end)
 end
-coroutine.wrap(BRJBQ_fake_script)()
-local function RWDXLH_fake_script() -- PlayerFrame.JARAXY 
+coroutine.wrap(KVOD_fake_script)()
+local function NZWDF_fake_script() -- PlayerFrame.JARAXY 
 	local script = Instance.new('LocalScript', PlayerFrame)
 
 	local main = script.Parent
@@ -1444,17 +1443,17 @@ local function RWDXLH_fake_script() -- PlayerFrame.JARAXY
 		end
 	end)
 end
-coroutine.wrap(RWDXLH_fake_script)()
-local function QZFFA_fake_script() -- TextLabel_5.LocalScript 
+coroutine.wrap(NZWDF_fake_script)()
+local function SFXOTCJ_fake_script() -- TextLabel_5.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_5)
 
 	local plr = game.Players.LocalPlayer
 	
 	
-	script.Parent.Text = "MGU Arceus X | ".. plr.Name.. " | Release 2.3"
+	script.Parent.Text = "MGU Arceus X | ".. plr.Name.. " | Release 1.0"
 end
-coroutine.wrap(QZFFA_fake_script)()
-local function QQGW_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(SFXOTCJ_fake_script)()
+local function RUQOPWA_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local Menu = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
@@ -1463,8 +1462,8 @@ local function QQGW_fake_script() -- TextButton_3.LocalScript
 		script.Parent.Parent.Parent.Closed.Visible = true
 	end)
 end
-coroutine.wrap(QQGW_fake_script)()
-local function HDOCZY_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(RUQOPWA_fake_script)()
+local function ESDP_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local main = game.Players.LocalPlayer.PlayerGui.MguLite.MainFrame
@@ -1476,4 +1475,4 @@ local function HDOCZY_fake_script() -- TextButton_4.LocalScript
 		main.Visible = true
 	end)
 end
-coroutine.wrap(HDOCZY_fake_script)()
+coroutine.wrap(ESDP_fake_script)()
