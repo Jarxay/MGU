@@ -105,17 +105,17 @@ local function HHUBSIM_fake_script() -- Frame.LocalScript
 	local ArceusButton = Main.ArceusXButton
 	
 	local function ExecuteSynapse()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Jarxay/MGU/main/NinjaLegendsSynapse.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Jarxay/Temptation/main/NinjaLegendsSynapse.lua"))()
 		Main:Destroy()
 	end
 	
 	local function ExecuteArceus()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Jarxay/MGU/main/NinjaLegendsArceusX.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Jarxay/Temptation/main/NinjaLegendsArceusX.lua"))()
 		Main:Destroy()
 	end
 	
 	local function ExecuteOther()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Jarxay/MGU/main/NinjaLegendsOther"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Jarxay/Temptation/main/NinjaLegendsOther"))()
 		Main:Destroy()
 	end
 	
