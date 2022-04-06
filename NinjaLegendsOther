@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local MguLiteOther = Instance.new("ScreenGui")
+local TemptationLiteOther = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Main = Instance.new("Frame")
 local ButtonsOWO = Instance.new("Frame")
@@ -48,13 +48,13 @@ local TextButton_2 = Instance.new("TextButton")
 
 --Properties:
 
-MguLiteOther.Name = "MguLiteOther"
-MguLiteOther.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-MguLiteOther.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-MguLiteOther.ResetOnSpawn = false
+TemptationLiteOther.Name = "TemptationLiteOther"
+TemptationLiteOther.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TemptationLiteOther.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+TemptationLiteOther.ResetOnSpawn = false
 
 MainFrame.Name = "MainFrame"
-MainFrame.Parent = MguLiteOther
+MainFrame.Parent = TemptationLiteOther
 MainFrame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 MainFrame.BorderColor3 = Color3.fromRGB(38, 83, 238)
 MainFrame.Position = UDim2.new(0.136120349, 0, 0.250848621, 0)
@@ -349,14 +349,14 @@ TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.Position = UDim2.new(0.0167299844, 0, -0.00579654798, 0)
 TextLabel_3.Size = UDim2.new(0, 235, 0, 18)
 TextLabel_3.Font = Enum.Font.Code
-TextLabel_3.Text = "MGU Lite | INSERTPLR  | Release 1.0"
+TextLabel_3.Text = "Temptation Lite | INSERTPLR  | Release 1.0"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
 
 PlayerFrame.Name = "PlayerFrame"
-PlayerFrame.Parent = MguLiteOther
+PlayerFrame.Parent = TemptationLiteOther
 PlayerFrame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
 PlayerFrame.BorderColor3 = Color3.fromRGB(38, 83, 238)
 PlayerFrame.Position = UDim2.new(0.136120349, 0, 0.250848621, 0)
@@ -448,7 +448,7 @@ TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.Position = UDim2.new(0.0167299844, 0, -0.00579654798, 0)
 TextLabel_5.Size = UDim2.new(0, 235, 0, 18)
 TextLabel_5.Font = Enum.Font.Code
-TextLabel_5.Text = "MGU Arceus X | INSERTPLR  | Release 1.0"
+TextLabel_5.Text = "Temptation Arceus X | INSERTPLR  | Release 1.0"
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
@@ -472,7 +472,7 @@ local function EGGFBBL_fake_script() -- MainFrame.JARAXY
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local plr = game.Players.LocalPlayer
-	local Mainframe = game.Players.LocalPlayer.PlayerGui.MguLiteOther.MainFrame.Main.Mainowo.Frame
+	local Mainframe = game.Players.LocalPlayer.PlayerGui.TemptationLiteOther.MainFrame.Main.Mainowo.Frame
 	
 	
 	local uis = game:GetService("UserInputService")
@@ -1226,7 +1226,7 @@ local function FXAHPOY_fake_script() -- ButtonsOWO.LocalScript
 	local script = Instance.new('LocalScript', ButtonsOWO)
 
 	local plr = game.Players.LocalPlayer
-	local MainFrame = game.Players.LocalPlayer.PlayerGui.MguLiteOther.MainFrame.Main.ButtonsOWO.Frame
+	local MainFrame = game.Players.LocalPlayer.PlayerGui.TemptationLiteOther.MainFrame.Main.ButtonsOWO.Frame
 	
 	local UnlockAllIslands = MainFrame.UnlockIslands
 	local UnlockAllElements = MainFrame.UnlockElements
@@ -1334,8 +1334,8 @@ coroutine.wrap(FXAHPOY_fake_script)()
 local function JDGTGWF_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
-	local main = game.Players.LocalPlayer.PlayerGui.MguLiteOther.MainFrame
-	local player = game.Players.LocalPlayer.PlayerGui.MguLite.PlayerFrame
+	local main = game.Players.LocalPlayer.PlayerGui.TemptationLiteOther.MainFrame
+	local player = game.Players.LocalPlayer.PlayerGui.TemptationLite.PlayerFrame
 	
 	
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1350,13 +1350,13 @@ local function KRDK_fake_script() -- TextLabel_3.LocalScript
 	local plr = game.Players.LocalPlayer
 	
 	
-	script.Parent.Text = "MGU Lite | ".. plr.Name.. " | Release 1.0"
+	script.Parent.Text = "Temptation Lite | ".. plr.Name.. " | Release 1.0"
 end
 coroutine.wrap(KRDK_fake_script)()
 local function NTGRT_fake_script() -- PlayerFrame.JARAXY 
 	local script = Instance.new('LocalScript', PlayerFrame)
 
-	local main = game.Players.LocalPlayer.PlayerGui.MguLiteOther.PlayerFrame.Main.Mainowo
+	local main = game.Players.LocalPlayer.PlayerGui.TemptationLiteOther.PlayerFrame.Main.Mainowo
 	local SpeedButton = main.Main.Mainowo.Frame.Speed
 	local SpeedToggle = main.Main.Mainowo.Frame.SpeedToggle
 	local speed = false
@@ -1401,14 +1401,14 @@ local function XNNJB_fake_script() -- TextLabel_5.LocalScript
 	local plr = game.Players.LocalPlayer
 	
 	
-	script.Parent.Text = "MGU Arceus X | ".. plr.Name.. " | Release 2.3"
+	script.Parent.Text = "Temptation Arceus X | ".. plr.Name.. " | Release 2.3"
 end
 coroutine.wrap(XNNJB_fake_script)()
 local function TSEAAZZ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
-	local main = game.Players.LocalPlayer.PlayerGui.MguLiteOther.MainFrame
-	local player = game.Players.LocalPlayer.PlayerGui.MguLiteOther.PlayerFrame
+	local main = game.Players.LocalPlayer.PlayerGui.TemptationLiteOther.MainFrame
+	local player = game.Players.LocalPlayer.PlayerGui.TemptationLiteOther.PlayerFrame
 	
 	
 	script.Parent.MouseButton1Click:Connect(function()
