@@ -3,7 +3,7 @@
    wait(0.1)
 end]]
 
---MGU Made by jarxay
+--Temptation Made by jarxay
 
 local DiscordInvite = "https://discord.gg/7XFnezqGc3"
 local Version = "Release: ".. 2.3
@@ -179,8 +179,8 @@ local function CollectChiChest()
     end
     
 end;
-local TestWindow = Library:CreateWindow('MGU | '.. plr.Name.. ' | '..Version);
-Library:SetWatermark('MGU | '.. plr.Name.. ' | '..Version);
+local TestWindow = Library:CreateWindow('Temptation | '.. plr.Name.. ' | '..Version);
+Library:SetWatermark('Temptation | '.. plr.Name.. ' | '..Version);
 
 local MainTab = TestWindow:AddTab('Main');
 local PlayerTab = TestWindow:AddTab('Player');
@@ -339,7 +339,7 @@ end)
 
 Toggles.Speed:OnChanged(function()
    if Toggles.Speed.Value then
-       print("MGU : SUPERSPEED")
+       print("Temptation : SUPERSPEED")
        plr.Character.Humanoid.WalkSpeed = 145
        
        else
@@ -350,7 +350,7 @@ end)
 
 Toggles.HighJump:OnChanged(function()
     if Toggles.HighJump.Value then
-        print("MGU : HIGHJUMP")
+        print("Temptation : HIGHJUMP")
         plr.Character.Humanoid.JumpPower = 350
         
     else
@@ -1031,7 +1031,6 @@ Toggles.ClickTP:OnChanged(function()
     end)
 end)
 
-Library:Notify('LOADED OMG NIGGERS')
 UpdateTheme()
 Library:Notify('Made by Jarxay#0001 | '.. DiscordInvite);
 
