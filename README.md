@@ -1,4 +1,4 @@
-# MGU
+# Temptation script
 
 **Made by Jarxay**
 
