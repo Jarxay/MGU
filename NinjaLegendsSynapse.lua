@@ -179,9 +179,23 @@ local function CollectChiChest()
     end
     
 end;
+
+local function CollectAllChi()
+    for i,v in pairs(game:GetService("Workspace").spawnedCoins.Valley:GetChildren()) do
+        if v.Name == "Chi" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+            wait(0.45)
+        end
+    end
+end;
+
 local TestWindow = Library:CreateWindow('Temptation | '.. plr.Name.. ' | '..Version);
 Library:SetWatermark('Temptation | '.. plr.Name.. ' | '..Version);
 
+
+local function changelogbutton()
+    print("bob")
+end;
 local MainTab = TestWindow:AddTab('Main');
 local PlayerTab = TestWindow:AddTab('Player');
 local TeleportTab = TestWindow:AddTab('Teleports');
@@ -190,6 +204,7 @@ local MainTabBox2 = MainTab:AddRightTabbox('Unlock all islands');
 local SellTabber = MainTabBox1:AddTab('Auto');
 local UnlockAll = MainTabBox2:AddTab('Buttons');
 local MiscTab = TestWindow:AddTab('Misc');
+local ChangelogsTab = TestWindow:AddTab('Changelogs');
 local SettingsTab = TestWindow:AddTab('Settings');
 
 SellTabber:AddToggle('Autoswing', { Text = 'Autoswing' });
@@ -201,10 +216,16 @@ SellTabber:AddToggle('AutoRebirth', {Text = 'Auto Rebirth'});
 UnlockAll:AddButton('Unlock all islands', TeleportAll);
 UnlockAll:AddButton('Unlock all elements', UnlockAllEments);
 UnlockAll:AddButton('Autofarm', AutofarmFunc);
+UnlockAll:AddButton('Collect all chi (New)', CollectAllChi);
 UnlockAll:AddButton('Collect all hoops', CollectHoops)
 local TeleportBox1 = TeleportTab:AddLeftTabbox('Spawn');
 local TeleportText2 = TeleportBox1:AddTab('Spawn');
 TeleportText2:AddButton('Spawn', SpawnTPFunc);
+
+local ChangelogsBox1 = ChangelogsTab:AddLeftTabbox('Changelog');
+local ChangelogsBoxBob = ChangelogsBox1:AddTab('Changelogs');
+
+ChangelogsBoxBob:AddButton('2022-04-13 : Collect all chi', changelogbutton)
 
 local FunBox1 = MiscTab:AddLeftTabbox('Memes');
 local FunText1 = FunBox1:AddTab('Memes')
