@@ -4,6 +4,16 @@
 end]]
 
 --Temptation Made by jarxay
+local uis = game:GetService("UserInputService")
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+
+uis.InputBegan:Connect(function(input,gameProccesedEvent)
+    if input.KeyCode == Enum.KeyCode.Space then
+        humanoid:ChangeState("Jumping")
+        wait()
+        humanoid:ChangeState("Idle")
+    end
+end)
 
 local DiscordInvite = "https://discord.gg/7XFnezqGc3"
 local Version = "Release: ".. 2.3
@@ -253,7 +263,7 @@ local Movement = PlayerTabBox1:AddTab('Movement');
 
 Movement:AddToggle('Speed', { Text = "Speed"})
 
-Movement:AddToggle('HighJump', { Text = "HighJump"})
+Movement:AddToggle('HighJump', { Text = "HighJump"}) 
 
 Movement:AddToggle('NoGravity', { Text = "NoGravity"})
 
@@ -293,6 +303,14 @@ Theme:AddButton('Default Theme', SetDefault);
 Theme:AddToggle('Watermark', { Text = 'Show Watermark', Default = true }):OnChanged(function()
     Library:SetWatermarkVisibility(Toggles.Watermark.Value);
 end);
+
+uis.InputBegan:Connect(function(input,gameProccesedEvent)
+    if input.KeyCode == Enum.KeyCode.Space then
+        humanoid:ChangeState("Jumping")
+        wait()
+        humanoid:ChangeState("Idle")
+    end
+end)
 
 task.spawn(function()
     while game:GetService('RunService').RenderStepped:Wait() do
@@ -1039,17 +1057,18 @@ Toggles.AutoBuySkills:OnChanged(function()
     end
 end)
 
-local UIS = game:GetService("UserInputService")
-
 
 Toggles.ClickTP:OnChanged(function()
-    UIS.InputBegan:Connect(function(input,gameProccesedEvent)
+    uis.InputBegan:Connect(function(input,gameProccesedEvent)
         if input.KeyCode == Enum.KeyCode.B then
             local MousePos = mouse.Hit+Vector3.new(0,5,0)
 
             plr.Character.HumanoidRootPart.CFrame = MousePos
         end
     end)
+end)
+
+
 end)
 
 UpdateTheme()
