@@ -236,6 +236,7 @@ local ChangelogsBox1 = ChangelogsTab:AddLeftTabbox('Changelog');
 local ChangelogsBoxBob = ChangelogsBox1:AddTab('Changelogs');
 
 ChangelogsBoxBob:AddButton('2022-04-13 : Collect all chi', changelogbutton)
+ChangelogsBoxBob:AddButton('2022-04-13 : Infinite jump', changelogbutton)
 
 local FunBox1 = MiscTab:AddLeftTabbox('Memes');
 local FunText1 = FunBox1:AddTab('Memes')
@@ -304,11 +305,24 @@ Theme:AddToggle('Watermark', { Text = 'Show Watermark', Default = true }):OnChan
     Library:SetWatermarkVisibility(Toggles.Watermark.Value);
 end);
 
+
 uis.InputBegan:Connect(function(input,gameProccesedEvent)
     if input.KeyCode == Enum.KeyCode.Space then
-        humanoid:ChangeState("Jumping")
-        wait()
-        humanoid:ChangeState("Idle")
+        isfly = true
+
+        while isfly == true do
+            wait()
+
+            humanoid:ChangeState("Jumping")
+            wait()
+            humanoid:ChangeState("Idle")
+        end
+    end
+end)
+
+uis.InputEnded:Connect(function(input,gameProccesedEvent)
+    if input.KeyCode == Enum.KeyCode.Space then
+        isfly = false
     end
 end)
 
@@ -1066,9 +1080,6 @@ Toggles.ClickTP:OnChanged(function()
             plr.Character.HumanoidRootPart.CFrame = MousePos
         end
     end)
-end)
-
-
 end)
 
 UpdateTheme()
